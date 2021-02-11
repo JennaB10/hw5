@@ -88,9 +88,9 @@ let AllRidesArray = []
       {
       AllRidesArray.push(json[h])
    }}
-   let ridesDiv = document.querySelector('.rides')
-   let html = renderRides(AllRidesArray)
-   ridesDiv.insertAdjacentHTML('beforeend', `${html}`) 
+   //let ridesDiv = document.querySelector('.rides')
+   renderRides(AllRidesArray)
+   //ridesDiv.insertAdjacentHTML('beforeend', `${html}`) 
   })
    
 let PurpleRide = document.querySelector('#noober-purple-filter')
@@ -111,9 +111,9 @@ let purpleArray = []
       if(b=="Noober Purple"){
       purpleArray.push(json[i])
          }}      
-      let ridesDiv = document.querySelector('.rides')
-      let html = renderRides(purpleArray)
-      ridesDiv.insertAdjacentHTML('beforeend', `${html}`)
+      //let ridesDiv = document.querySelector('.rides')
+      renderRides(purpleArray)
+      //ridesDiv.insertAdjacentHTML('beforeend', `${html}`)
         })
     
 let PoolRide = document.querySelector('#noober-pool-filter')
@@ -134,9 +134,9 @@ let PoolArray = []
       if(c=="Noober Pool"){
       PoolArray.push(json[j])
    }}
-   let ridesDiv = document.querySelector('.rides')
-   let html = renderRides(PoolArray)
-   ridesDiv.insertAdjacentHTML('beforeend', `${html}`)
+   //let ridesDiv = document.querySelector('.rides')
+   renderRides(PoolArray)
+   // ridesDiv.insertAdjacentHTML('beforeend', `${html}`)
   })
 
 let XLRide = document.querySelector('#noober-xl-filter')
@@ -157,9 +157,9 @@ let XLArray = []
       if(d=="Noober XL"){
       XLArray.push(json[k])
    }}
-   let ridesDiv = document.querySelector('.rides')
-    let html = renderRides(XLArray)
-    ridesDiv.insertAdjacentHTML('beforeend', `${html}`)
+   // let ridesDiv = document.querySelector('.rides')
+    renderRides(XLArray)
+    // ridesDiv.insertAdjacentHTML('beforeend', `${html}`)
   })
 
 let XRide = document.querySelector('#noober-x-filter')
@@ -180,8 +180,8 @@ let XArray = []
       if(e=="Noober X"){
       XArray.push(json[m])
    }}
-   let ridesDiv = document.querySelector('.rides')
-    let html = renderRides(XArray)
+   //let ridesDiv = document.querySelector('.rides')
+     renderRides(XArray)
   //  ridesDiv.insertAdjacentHTML('beforeend', `${html}`)
   
 })
